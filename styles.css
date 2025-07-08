@@ -27,21 +27,21 @@ main {
 
 main h1 {
   color: #0077b6; /* Deep sky blue */
-  font-size: 3rem;
+  font-size: 48px;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 32px;
 }
 
 main h2 {
   color: #00b4d8; /* Vibrant turquoise */
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 main p {
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 footer {
@@ -57,10 +57,59 @@ footer {
 .profile-card {
   background: #ffffffcc; /* semi-transparent white for contrast */
   border: 2px solid #0077b6;
-  border-radius: 1rem;
+  border-radius: 16px;
   box-shadow: 0 4px 16px rgba(0, 119, 182, 0.15);
   max-width: 400px;
-  margin: 3rem auto;
-  padding: 2rem;
+  margin: 48px auto;
+  padding: 32px;
   text-align: center;
+}
+
+.profile-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 24px auto;
+  display: block;
+  border: 1px solid #b5d6e6; /* very thin, soft blue border */
+  box-shadow: 0 2px 8px rgba(0, 119, 182, 0.15); /* subtle blue shadow */
+}
+
+.profile-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 8px; /* thin horizontal gap */
+  justify-content: center;
+}
+
+.profile-card ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-card ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px; /* wider buttons */
+  padding: 16px 0;
+  font-size: 20px;
+  color: #0077b6;
+  background: #b2ebf2;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  font-weight: bold;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.profile-card ul li a:hover {
+  background: #00b4d8;
+  color: #fff;
 }
