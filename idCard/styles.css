@@ -16,6 +16,11 @@ main {
   padding: 32px;
 }
 
+main h1, main h2, main h3 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+}
+
 main h1 {
   color: #f7a14b; /* bold, warm orange from the sun */
   font-size: 48px;
@@ -30,8 +35,10 @@ main h2 {
   color: #f7c873; /* lighter orange/yellow highlight */
   font-size: 32px;
   text-align: center;
-  margin-top: 16px;
+  margin-top: 8px;    /* reduced top margin */
+  margin-bottom: 4px;  /* add a small bottom margin */
   font-weight: 700;
+  line-height: 1.1;    /* slightly increased line spacing */
 }
 
 main h3 {
@@ -40,11 +47,6 @@ main h3 {
   text-align: center;
   margin-top: 16px;
   font-weight: 600;
-}
-
-main h1, main h2, main h3 {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
 }
 
 main p {
