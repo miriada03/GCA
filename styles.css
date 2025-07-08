@@ -1,52 +1,61 @@
 body {
-  background-color: #add8e6; /* light blue */
+  background: linear-gradient(135deg, #1b2c4a 0%, #f7a14b 100%);
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
 header {
-  background-color: #4682b4; /* steel blue */
-  color: white;
-  padding: 0.2rem 1rem; /* further reduced vertical padding */
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+  padding: 0;
   text-align: center;
-}
-
-nav {
-  margin: 1rem 0;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 1rem;
 }
 
 main {
-  padding: 2rem;
+  padding: 32px;
 }
 
 main h1 {
-  color: #0077b6; /* Deep sky blue */
+  color: #f7a14b; /* bold, warm orange from the sun */
   font-size: 48px;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 8px;      /* reduced from 32px */
+  margin-bottom: 4px;    /* add a small bottom margin */
+  font-weight: 900;
+  line-height: 1.05;      /* even tighter line spacing */
 }
 
 main h2 {
-  color: #00b4d8; /* Vibrant turquoise */
+  color: #f7c873; /* lighter orange/yellow highlight */
   font-size: 32px;
   text-align: center;
   margin-top: 16px;
+  font-weight: 700;
+}
+
+main h3 {
+  color: #7ec6e3; /* soft blue from the clouds */
+  font-size: 24px;
+  text-align: center;
+  margin-top: 16px;
+  font-weight: 600;
+}
+
+main h1, main h2, main h3 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
 }
 
 main p {
   text-align: center;
   font-size: 20px;
+  color: #e9e6e1; /* light sand/white from the clouds */
 }
 
 footer {
-  background-color: #4682b4; /* steel blue */
-  color: white;
+  background: transparent;
+  color: #e9e6e1;
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -55,34 +64,34 @@ footer {
 }
 
 .profile-card {
-  background: #ffffffcc; /* semi-transparent white for contrast */
-  border: 2px solid #0077b6;
+  background: transparent;
+  border: none;
   border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 119, 182, 0.15);
-  max-width: 400px;
+  box-shadow: none;
+  max-width: 600px;      /* increased from 400px */
   margin: 48px auto;
-  padding: 32px;
+  padding: 48px 40px;    /* increased padding for more space */
   text-align: center;
 }
 
 .profile-card img {
-  width: 120px;
-  height: 120px;
+  width: 140px;          /* slightly larger image */
+  height: 140px;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 auto 24px auto;
   display: block;
-  border: 1px solid #b5d6e6; /* very thin, soft blue border */
-  box-shadow: 0 2px 8px rgba(0, 119, 182, 0.15); /* subtle blue shadow */
+  border: 2px solid #7ec6e3; /* soft blue border */
+  box-shadow: 0 2px 8px rgba(30, 60, 110, 0.18); /* subtle blue shadow */
 }
 
 .profile-card ul {
   list-style: none;
   padding: 0;
-  margin: 24px 0 0 0;
+  margin: 32px 0 0 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px 8px; /* thin horizontal gap */
+  grid-template-columns: 220px 220px; /* fixed, wide buttons */
+  gap: 16px 18px;                    /* slightly more horizontal gap */
   justify-content: center;
 }
 
@@ -93,23 +102,38 @@ footer {
 }
 
 .profile-card ul li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 170px; /* wider buttons */
-  padding: 16px 0;
-  font-size: 20px;
-  color: #0077b6;
-  background: #b2ebf2;
+  width: 100%;        /* fill the grid cell */
+  padding: 18px 0;
+  font-size: 22px;
+  color: #f7c873;
+  background: #1b2c4a;
   border-radius: 8px;
   text-decoration: none;
   transition: background 0.2s, color 0.2s;
   font-weight: bold;
   box-sizing: border-box;
   text-align: center;
+  border: 1px solid #7ec6e3;
 }
 
 .profile-card ul li a:hover {
-  background: #00b4d8;
-  color: #fff;
+  background: #f7a14b; /* warm orange on hover */
+  color: #1b2c4a;     /* deep blue text on hover */
+}
+
+/* New section styles */
+.section-secondary {
+  max-width: 700px;     /* wider secondary section */
+  margin: 56px auto 0 auto;
+  padding: 40px;
+  background: rgba(30,44,74,0.7); /* deep blue, semi-transparent */
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(30,60,110,0.10);
+}
+
+.section-secondary p {
+  color: #f7c873;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
 }
